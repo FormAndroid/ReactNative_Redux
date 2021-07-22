@@ -8,8 +8,12 @@ const Stack = createStackNavigator();
 const TodoApp = () => {
     return (
         <Stack.Navigator initialRouteName='todo/list'>
-            <Stack.Screen name='todo/list' component={TodoList} />
-            <Stack.Screen name='todo/add' component={TodoAdd} />
+            <Stack.Screen name='todo/list' component={TodoList} options={{
+                title:'Todo App'
+            }} />
+            <Stack.Screen name='todo/add' component={TodoAdd} options={{
+                title: 'Ajouter une tache'
+            }} />
         </Stack.Navigator>
     );
 }
