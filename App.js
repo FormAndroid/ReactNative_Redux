@@ -15,6 +15,7 @@ import TodoApp from './src/containers/todo-app/todo-app';
 
 import store from './src/store/store';
 import { Provider } from 'react-redux';
+import Weather from './src/containers/weather/weather';
 
 const Drawer = createDrawerNavigator();
 
@@ -34,6 +35,7 @@ const App = () => {
           <Drawer.Navigator>
             <Drawer.Screen component={Home} name='home' />
             <Drawer.Screen component={TodoApp} name='todo' />
+            <Drawer.Screen component={Weather} name='weather' />
           </Drawer.Navigator>
         </NavigationContainer>
       </SafeAreaView>
