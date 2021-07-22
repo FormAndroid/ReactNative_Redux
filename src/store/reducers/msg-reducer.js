@@ -6,6 +6,7 @@ const initialState = {
 
 // Méthode "reducer" qui permet de modifier les valeurs du store
 const msgReducer = (state = initialState, action) => {
+    console.log(action);
 
     // Modification en fonction du type d'action recu
     switch (action.type) {
